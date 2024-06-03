@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Couleurs -->
+    <color name="primary_blue">#3897F0</color>
+    <color name="input_background">#FAFAFA</color>
+    <color name="input_border">#E2E2E2</color>
+    <color name="primary_text">#333333</color>
+</resources>
