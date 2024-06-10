@@ -32,6 +32,14 @@
             android:label="@string/title_activity_signup"
             android:theme="@style/Theme.Td1instagram" />
         <activity
+            android:name=".AddPostActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Td1instagram" />
+        <activity
+            android:name=".EditPostActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Td1instagram" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
