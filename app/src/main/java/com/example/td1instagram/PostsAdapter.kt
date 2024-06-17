@@ -37,12 +37,17 @@ class PostsAdapter(private val context: Context, private var posts: List<Posts>)
         val post = posts[position]
         holder.titleTextView.text = post.title
         holder.bodyTextView.text = post.body
-        Picasso.get().load(post.imageUrl).into(holder.imageView)
 
-        // Redimensionner l'image drawable
+        if (post.imageUrl.isNotEmpty()) {
+            Picasso.get().load(post.imageUrl).into(holder.imageView)
+        } else {
+            holder.imageView.setImageResource(R.drawable.heart) // Placeholder image if URL is empty
+        }
+
+        // Redimensionner l'image drawable pour le cœur
         val drawable = ContextCompat.getDrawable(context, R.drawable.heart)?.apply {
             val wrappedDrawable: Drawable = DrawableCompat.wrap(this)
-            val size = 40  // Taille du coeur en pixels
+            val size = 40  // Taille du cœur en pixels
             wrappedDrawable.setBounds(0, 0, size, size)
         }
         holder.likeTextView.setCompoundDrawables(drawable, null, null, null)
@@ -79,5 +84,3 @@ class PostsAdapter(private val context: Context, private var posts: List<Posts>)
 
     override fun getItemCount(): Int = posts.size
 }
-
-

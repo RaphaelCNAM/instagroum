@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "807903315966",
+    "project_id": "instagroum-52096",
+    "storage_bucket": "instagroum-52096.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807903315966:android:9fa23492381206f3b7a2af",
+        "android_client_info": {
+          "package_name": "com.example.td1instagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807903315966-vnfh6dhmfjqg5c0ba8a51gra7hns44u9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKGvgjqJApO7-z261JgEOfyNkUOcoqvHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807903315966-vnfh6dhmfjqg5c0ba8a51gra7hns44u9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
